@@ -1,0 +1,316 @@
+Name,Firmware ver.,Application,Date,App. ver.,Ser. num.,Filename,,
+SGC 1615,IG-NT-GC-4.0.1 R:19.3.2018,MINT,8/24/2022,4,19490438,,,
+,,,,,,,,
+Group,Name,Value,Dimension,Password,Com. obj.,Low limit,High limit,Data type
+,,,,,,,,
+ProcessControl,#SysBaseLoad,0,kW,0,8775,0,65000,Unsigned 16
+ProcessControl,LocalBaseload,OFF,kW,0,10118,OFF; 1,640,Unsigned 16
+ProcessControl,#SysPwrFactor,0.8, ,0,8776,0.6,1.2,Integer 16
+ProcessControl,#SysLdCtrl PtM,LDSHARING, ,0,8774,,,String list
+ProcessControl,#SysPFCtrl PtM,VSHARING, ,0,8779,,,String list
+ProcessControl,SysBaseLdMode,INTERNAL, ,0,10339,,,String list
+ProcessControl,SysBasePFMode,INTERNAL, ,0,11003,,,String list
+ProcessControl,Synchro enable,FORWARD, ,0,9235,,,String list
+ProcessControl,#Neutral cont,EACH, ,0,9890,,,String list
+ProcessControl,WatchedContr,OFF, ,0,11719,OFF; 1,16,Unsigned 8
+ProcessControl,CB ctrl mode,INTERNAL, ,0,11771,,,String list
+,,,,,,,,
+SUS control,SUS sequence,DISABLED, ,0,10110,,,String list
+SUS control,RPM window,30,%,0,10193,0,100,Unsigned 16
+SUS control,RPM win TO,30,s,0,10194,2,6000,Unsigned 16
+SUS control,#ExcitationDel,10,s,0,14104,0,600; NO TIMEOUT,Unsigned 16
+SUS control,#SUS min power,100,kW,0,14013,1,65000,Unsigned 16
+SUS control,ExcitationCtrl,INTERNAL, ,0,10056,,,String list
+,,,,,,,,
+Basic settings,Nomin power,640,kW,0,8276,1,32000,Unsigned 16
+Basic settings,Nomin current,1100,A,0,8275,1,10000,Unsigned 16
+Basic settings,CT ratio prim,1600,A,0,8274,1,15000,Unsigned 16
+Basic settings,CT ratio sec,/5A, ,0,10556,,,String list
+Basic settings,EarthFltCurCTp,1600,A,0,8566,1,15000,Unsigned 16
+Basic settings,EarthFltCurCTs,/5A, ,0,10557,,,String list
+Basic settings,VT ratio,1,V/V,0,9579,0.1,500,Unsigned 16
+Basic settings,Vg InpRangeSel,277 V, ,0,10662,,,String list
+Basic settings,Vb VT ratio,1,V/V,0,9580,0.1,500,Unsigned 16
+Basic settings,Vb InpRangeSel,277 V, ,0,10663,,,String list
+Basic settings,GenNomV,240,V,0,8277,10,34641,Unsigned 16
+Basic settings,GenNomVph-ph,415,V,0,9673,17,60000,Unsigned 16
+Basic settings,BusNomV,240,V,0,9888,10,34641,Unsigned 16
+Basic settings,BusNomVph-ph,415,V,0,9907,17,60000,Unsigned 16
+Basic settings,FixVoltProtSel,PHASE-NEUTRAL, ,0,10647,,,String list
+Basic settings,Nominal freq,50 Hz, ,0,13220,,,String list
+Basic settings,Nom frq offset,0,Hz,0,13221,-2,2,Integer 16
+Basic settings,Gear teeth,FGen->RPM, ,0,8252,FGen->RPM; 1,500,Unsigned 16
+Basic settings,Nominal RPM,1500,RPM,0,8253,100,4000,Unsigned 16
+Basic settings,ControllerMode,AUT, ,0,8315,,,String list
+Basic settings,ContrInitMode,PREVIOUS, ,0,13000,,,String list
+Basic settings,FltRes GoToMAN,DISABLED, ,0,9983,,,String list
+Basic settings,Local buttons,BOTH, ,0,10588,,,String list
+Basic settings,DispBaklightTO,15,min,0,10121,OFF; 1,240; NO TIMEOUT,Unsigned 8
+Basic settings,DispBklStrtOff,ENABLED, ,0,11002,,,String list
+Basic settings,UserBtn pulse,0.2,s,0,14020,0.2,10,Unsigned 8
+Basic settings,RunHoursSource,AUTO, ,0,13345,,,String list
+Basic settings,ConvCoefPulse,1,/X,0,10994,1,65000,Unsigned 16
+Basic settings,ImpCountDef1,0, ,0,14277,0,65535,Unsigned 16
+,,,,,,,,
+Comms settings,Gen-set name,SGC 1615, ,0,8637,,,Short string
+Comms settings,Contr. address,4, ,0,24537,1,32,Unsigned 8
+Comms settings,RS232(1) mode,DIRECT, ,0,24522,,,String list
+Comms settings,RS232(2) mode,DIRECT, ,0,24451,,,String list
+Comms settings,RS232(1)MBCSpd,9600,bps,0,24477,,,String list
+Comms settings,RS232(2)MBCSpd,9600,bps,0,24420,,,String list
+Comms settings,RS485(1)conv.,DISABLED, ,0,24435,,,String list
+Comms settings,RS485(2)conv.,DISABLED, ,0,24450,,,String list
+Comms settings,CAN bus mode,32C, ,0,24499,,,String list
+Comms settings,CAN2emptDetect,ENABLED, ,0,9921,,,String list
+Comms settings,LB/UART Log,DISABLED, ,0,11327,,,String list
+Comms settings,CANAddrSwitch1,OTHER, ,0,24399,,,String list
+Comms settings,CANAddrSwitch2,OTHER, ,0,24398,,,String list
+Comms settings,ECU Diag,ENABLED, ,0,10353,,,String list
+Comms settings,SHxOcol Detect,ENABLED, ,0,11024,,,String list
+,,,,,,,,
+Engine params,Starting RPM,350,RPM,0,9095,0,1500,Unsigned 16
+Engine params,Starting POil,4,bar,0,9681,0,10,Integer 16
+Engine params,Prestart time,0,s,0,8394,0,3600,Unsigned 16
+Engine params,PrelubrTime,0,s,0,8780,0,3600,Unsigned 16
+Engine params,PrelubrPause,1,min,0,8781,1,3000,Unsigned 16
+Engine params,MaxCrank time,10,s,0,8256,1,240,Unsigned 8
+Engine params,CrnkFail pause,10,s,0,8257,5,60,Unsigned 8
+Engine params,Crank attempts,3, ,0,8255,1,10,Unsigned 8
+Engine params,Idle time,5,s,0,9097,0,3600,Unsigned 16
+Engine params,Min stab time,5,s,0,8259,1,15,Unsigned 16
+Engine params,Max stab time,15,s,0,8313,5,3600,Unsigned 16
+Engine params,Warming load,60,%,0,9243,0,100,Integer 16
+Engine params,Warming temp,0,°C,0,9258,-40,210,Integer 16
+Engine params,Max warm time,10,s,0,8562,0,3600,Unsigned 16
+Engine params,Cooling speed,NOMINAL, ,0,10046,,,String list
+Engine params,Cooling time,120,s,0,8258,0,3600,Unsigned 16
+Engine params,CoolDnAfterBOC,STOP, ,0,11000,,,String list
+Engine params,Cooldown optim,DISABLED, ,0,10661,,,String list
+Engine params,AfterCoolTime,10,s,0,8662,0,3600,Unsigned 16
+Engine params,Stop time,35,s,0,9815,0,240,Unsigned 16
+Engine params,SDVentil time,10,s,0,9695,0,60,Unsigned 16
+Engine params,Fuel solenoid,DIESEL ENGINE, ,0,9100,,,String list
+Engine params,FuelSol offset,0,s,0,10525,-5,5,Integer 16
+Engine params,D+ function,DISABLED, ,0,9683,,,String list
+Engine params,Bin selector 1,OFF, ,0,10623,,,String list
+Engine params,Bin selector 2,OFF, ,0,10624,,,String list
+Engine params,Bin selector 3,OFF, ,0,10625,,,String list
+Engine params,Bin selector 4,OFF, ,0,10626,,,String list
+Engine params,MaxFuelDrop,25,%/h,0,12373,OFF; 1,50,Unsigned 8
+,,,,,,,,
+Engine protect,Horn timeout,20,s,0,8264,OFF; 1,3600; NO TIMEOUT,Unsigned 16
+Engine protect,RunOnlyBlkDel1,15,s,0,10023,0,3000,Unsigned 16
+Engine protect,RunOnlyBlkDel2,5,s,0,10024,0,3000,Unsigned 16
+Engine protect,RunOnlyBlkDel3,10,s,0,10025,0,3000,Unsigned 16
+Engine protect,BinInp delay 1,10,s,0,10131,0,600,Unsigned 16
+Engine protect,BinInp delay 2,10,s,0,10132,0,600,Unsigned 16
+Engine protect,BinInp delay 3,10,s,0,10133,0,600,Unsigned 16
+Engine protect,ForceBlock1Del,5,s,0,10569,0,60,Unsigned 16
+Engine protect,ForceBlock2Del,5,s,0,10570,0,60,Unsigned 16
+Engine protect,ForceBlock3Del,5,s,0,10571,0,60,Unsigned 16
+Engine protect,ResetActAlarms,ENABLED, ,0,10665,,,String list
+Engine protect,Overspeed,125,%,0,8263,0,200,Unsigned 16
+Engine protect,BOC LossEngPwr,OFF,%,0,15438,OFF; 1,100,Unsigned 8
+Engine protect,LossEngPwr del,10,s,0,15439,0,1800,Unsigned 16
+Engine protect,Service time 1,52119,h,0,10528,0,65534; OFF,Unsigned 16
+Engine protect,Service time 2,52119,h,0,10529,0,65534; OFF,Unsigned 16
+Engine protect,Service time 3,52119,h,0,10530,0,65534; OFF,Unsigned 16
+Engine protect,Service time 4,52119,h,0,10531,0,65534; OFF,Unsigned 16
+,,,,,,,,
+Gener protect,OverldStrtEval,150,%,0,8280,100,200,Unsigned 16
+Gener protect,2POvrldStEvDel,5,s,0,8281,0,600,Unsigned 16
+Gener protect,Min power PtM,10,%,0,9241,0,100,Unsigned 16
+Gener protect,Ishort,150,%,0,8282,100,500,Unsigned 16
+Gener protect,Ishort del,2,s,0,9991,0,10,Unsigned 16
+Gener protect,2Inom del,10,s,0,8283,0,600,Unsigned 16
+Gener protect,Gen >V BOC,115,%,0,8291,85,150,Unsigned 16
+Gener protect,Gen <V BOC,85,%,0,8293,20,115,Unsigned 16
+Gener protect,Gen >V Sd,120,%,0,10013,50,150,Unsigned 16
+Gener protect,Gen V del,10,s,0,9103,0,600,Unsigned 16
+Gener protect,Gen >f,115,%,0,8296,85,150,Unsigned 16
+Gener protect,Gen <f,85,%,0,8298,20,115,Unsigned 16
+Gener protect,Gen f del,10,s,0,8297,0,600,Unsigned 16
+Gener protect,BusMeasError,DISABLED, ,0,10558,,,String list
+Gener protect,Reverse power,10,%,0,8486,0,50,Unsigned 8
+Gener protect,ReversePwr del,10,s,0,8552,0,600,Unsigned 16
+Gener protect,Nom EthFltCurr,100,A,0,13290,0,10000,Unsigned 16
+Gener protect,2EthFltCur del,OFF,s,0,13291,OFF; 0.1,600,Unsigned 16
+Gener protect,ExcitationLoss,30,%,0,12486,0,150,Integer 16
+Gener protect,ExctLoss del,OFF,s,0,12487,OFF; 0.1,600,Unsigned 16
+Gener protect,Gen V unbal,30,%,0,9268,0,200,Integer 16
+Gener protect,Gen V unb del,10,s,0,9267,0,600,Unsigned 16
+Gener protect,Gen I unbal,200,%,0,9271,0,200,Integer 16
+Gener protect,Gen I unb del,60,s,0,9270,0,600,Unsigned 16
+,,,,,,,,
+Pwr management,Pwr management,ENABLED, ,0,8551,,,String list
+Pwr management,#Pwr mgmt mode,ABS (kVA), ,0,9874,,,String list
+Pwr management,Priority,5, ,0,8488,0,32,Unsigned 8
+Pwr management,#PriorAutoSwap,DISABLED, ,0,10593,,,String list
+Pwr management,Priority ctrl,MASTER, ,0,10592,,,String list
+Pwr management,#SysAMFstrtDel,10,s,0,8549,0,600,Unsigned 16
+Pwr management,#SysAMFstopDel,10,s,0,8550,0,600,Unsigned 16
+Pwr management,#LoadResStrt 1,70,kX,0,8489,-32000,80,Integer 16
+Pwr management,#LoadResStop 1,80,kX,0,8491,70,32000,Integer 16
+Pwr management,#LoadResStrt 2,600,kX,0,8490,-32000,700,Integer 16
+Pwr management,#LoadResStop 2,700,kX,0,8633,600,32000,Integer 16
+Pwr management,#LoadResStrt 3,600,kX,0,8831,-32000,700,Integer 16
+Pwr management,#LoadResStop 3,700,kX,0,8833,600,32000,Integer 16
+Pwr management,#LoadResStrt 4,900,kX,0,8832,-32000,1000,Integer 16
+Pwr management,#LoadResStop 4,1000,kX,0,8834,900,32000,Integer 16
+Pwr management,#%LdResStrt 1,60,%,0,10648,0,80,Unsigned 8
+Pwr management,#%LdResStop 1,80,%,0,10652,60,110,Unsigned 8
+Pwr management,#%LdResStrt 2,70,%,0,10649,0,85,Unsigned 8
+Pwr management,#%LdResStop 2,85,%,0,10653,70,110,Unsigned 8
+Pwr management,#%LdResStrt 3,60,%,0,10650,0,80,Unsigned 8
+Pwr management,#%LdResStop 3,80,%,0,10654,60,110,Unsigned 8
+Pwr management,#%LdResStrt 4,60,%,0,10651,0,80,Unsigned 8
+Pwr management,#%LdResStop 4,80,%,0,10655,60,110,Unsigned 8
+Pwr management,#NextStrt del,10,s,0,8492,0,3600,Unsigned 16
+Pwr management,#OverldNextDel,3,s,0,8493,0,3600,Unsigned 16
+Pwr management,#NextStopDel,480,s,0,8494,0,3600,Unsigned 16
+Pwr management,#SlowStopDel,10,s,0,8495,0,600,Unsigned 16
+Pwr management,#MinRunPower 1,100,kW,0,9584,0,65000,Unsigned 16
+Pwr management,#MinRunPower 2,200,kW,0,9585,0,65000,Unsigned 16
+Pwr management,#MinRunPower 3,300,kW,0,9586,0,65000,Unsigned 16
+Pwr management,RunHoursBase,1832,h,0,10600,0,200000,Unsigned 32
+Pwr management,#RunHrsMaxDiff,10,h,0,9919,0,65000,Unsigned 16
+Pwr management,#PwrBandContr1,1, ,0,10594,,,String list
+Pwr management,#PwrBandContr2,2, ,0,10595,,,String list
+Pwr management,#PwrBandContr3,1+2, ,0,10596,,,String list
+Pwr management,#PwrBandContr4,1+2+3, ,0,10597,,,String list
+Pwr management,#PwrBnChngDlUp,2,s,0,8896,0,3600,Unsigned 16
+Pwr management,#PwrBnChngDlDn,2,s,0,10795,0,3600,Unsigned 16
+Pwr management,Control group,COMMON, ,0,10589,COMMON; 2,32,Unsigned 8
+Pwr management,GroupLinkLeft,COMMON, ,0,10590,COMMON; 2,32,Unsigned 8
+Pwr management,GroupLinkRight,COMMON, ,0,10591,COMMON; 2,32,Unsigned 8
+,,,,,,,,
+Sync/Load ctrl,SpeedRegChar,POSITIVE, ,0,9054,,,String list
+Sync/Load ctrl,Voltage window,10,%,0,8650,0,100,Unsigned 16
+Sync/Load ctrl,GtoM AngleReq,0,°,0,9578,-180,180,Integer 16
+Sync/Load ctrl,Phase window,10,°,0,8652,0,90,Unsigned 16
+Sync/Load ctrl,Dwell time,0.3,s,0,8653,0,25,Unsigned 16
+Sync/Load ctrl,Freq gain,2.6,%,0,8715,0,200,Integer 16
+Sync/Load ctrl,Freq int,25,%,0,8716,0,100,Integer 16
+Sync/Load ctrl,Freq reg loop,SYNC ONLY, ,0,9891,,,String list
+Sync/Load ctrl,Angle gain,10,%,0,8718,0,200,Integer 16
+Sync/Load ctrl,Speed gov bias,0,V,0,8656,-5,5,Integer 16
+Sync/Load ctrl,SpdGovPWM rate,1200,Hz,0,10911,500,3000,Unsigned 16
+Sync/Load ctrl,SpeedGovLowLim,-5,V,0,10115,-10,5,Integer 16
+Sync/Load ctrl,SpeedGovHiLim,5,V,0,10559,-5,10,Integer 16
+Sync/Load ctrl,TauSpeedActuat,10,s,0,10784,1,300,Unsigned 16
+Sync/Load ctrl,Load ramp,15,s,0,8658,0,30,Unsigned 16
+Sync/Load ctrl,Load gain,8,%,0,8659,0,200,Integer 16
+Sync/Load ctrl,Load int,40,%,0,8713,0,100,Integer 16
+Sync/Load ctrl,RampStartLevel,5,%,0,10912,0,100,Unsigned 8
+Sync/Load ctrl,GCB open level,2,%,0,8547,0,100,Unsigned 16
+Sync/Load ctrl,GCB open del,30,s,0,8548,15,1800,Unsigned 16
+Sync/Load ctrl,Sync timeout,120,s,0,8657,1,1800; NO TIMEOUT,Unsigned 16
+Sync/Load ctrl,LS gain,10,%,0,8725,0,200,Integer 16
+Sync/Load ctrl,LS int,50,%,0,9035,0,100,Integer 16
+,,,,,,,,
+Volt/PF ctrl,AVRRegChar,POSITIVE, ,0,9055,,,String list
+Volt/PF ctrl,Voltage gain,30,%,0,8501,0,200,Integer 16
+Volt/PF ctrl,Voltage int,30,%,0,8720,0,100,Integer 16
+Volt/PF ctrl,PF gain,18,%,0,8503,0,200,Integer 16
+Volt/PF ctrl,PF int,30,%,0,8721,0,100,Integer 16
+Volt/PF ctrl,AVR DCout bias,50,%,0,8500,0,100,Integer 16
+Volt/PF ctrl,AVRI PWM rate,1200,Hz,0,15778,200,3000,Unsigned 16
+Volt/PF ctrl,VS gain,30,%,0,8777,0,200,Integer 16
+Volt/PF ctrl,VS int,30,%,0,9036,0,100,Integer 16
+Volt/PF ctrl,TauVoltActuat,10,s,0,10785,1,300,Unsigned 16
+,,,,,,,,
+Force value,FKWDRATE,500,kW,0,10667,1,32000,Integer 32
+Force value,Force value 2,0, ,0,10668,0,0,Integer 32
+Force value,Force value 3,0, ,0,10669,0,0,Integer 32
+Force value,Force value 4,0, ,0,10670,0,0,Integer 32
+Force value,Force value 5,0, ,0,10671,0,0,Integer 32
+Force value,Force value 6,0, ,0,10672,0,0,Integer 32
+Force value,Force value 7,0, ,0,10673,0,0,Integer 32
+Force value,Force value 8,0, ,0,10674,0,0,Integer 32
+Force value,Force value 9,0, ,0,10675,0,0,Integer 32
+Force value,Force value 10,0, ,0,10676,0,0,Integer 32
+Force value,Force value 11,0, ,0,10677,0,0,Integer 32
+Force value,Force value 12,0, ,0,10678,0,0,Integer 32
+Force value,Force value 13,0, ,0,10679,0,0,Integer 32
+Force value,Force value 14,0, ,0,10680,0,0,Integer 32
+Force value,Force value 15,0, ,0,10681,0,0,Integer 32
+Force value,Force value 16,0, ,0,10682,0,0,Integer 32
+Force value,ExtValue1deflt,0,X,0,11008,-32000,32000,Integer 16
+Force value,ExtValue2deflt,0,X,0,11009,-32000,32000,Integer 16
+Force value,ExtValue3deflt,0,X,0,11010,-32000,32000,Integer 16
+Force value,ExtValue4deflt,0,X,0,11011,-32000,32000,Integer 16
+,,,,,,,,
+Load shedding,Ld shed active,DISABLE, ,0,11001,,,String list
+Load shedding,Ld shed level,80,%,0,8884,20,200,Integer 16
+Load shedding,Ld shed delay,10,s,0,8887,0,600,Unsigned 16
+Load shedding,Ld recon level,20,%,0,8890,0,80,Integer 16
+Load shedding,Ld recon delay,10,s,0,8893,0,600,Unsigned 16
+Load shedding,AutoLd recon,ENABLED, ,0,9649,,,String list
+,,,,,,,,
+Timer settings,TimerChannel 1,OFF, ,0,10969,,,Timer
+Timer settings,TimerChannel 2,OFF, ,0,10970,,,Timer
+Timer settings,TimerChannel 3,OFF, ,0,10971,,,Timer
+Timer settings,TimerChannel 4,OFF, ,0,10973,,,Timer
+Timer settings,TimerChannel 5,OFF, ,0,10974,,,Timer
+Timer settings,TimerChannel 6,OFF, ,0,10975,,,Timer
+Timer settings,TimerChannel 7,OFF, ,0,10976,,,Timer
+Timer settings,TimerChannel 8,OFF, ,0,10977,,,Timer
+Timer settings,TimerChannel 9,OFF, ,0,10978,,,Timer
+Timer settings,TimerChannel10,OFF, ,0,10979,,,Timer
+Timer settings,TimerChannel11,OFF, ,0,10980,,,Timer
+Timer settings,TimerChannel12,OFF, ,0,10981,,,Timer
+Timer settings,TimerChannel13,OFF, ,0,10982,,,Timer
+Timer settings,TimerChannel14,OFF, ,0,10983,,,Timer
+Timer settings,TimerChannel15,OFF, ,0,10984,,,Timer
+Timer settings,TimerChannel16,OFF, ,0,10985,,,Timer
+,,,,,,,,
+Act. calls/SMS,History record,DISABLED, ,0,10568,,,String list
+Act. calls/SMS,Alarm only,ENABLED, ,0,10567,,,String list
+Act. calls/SMS,Warning,ENABLED, ,0,8482,,,String list
+Act. calls/SMS,Off load,DISABLED, ,0,8483,,,String list
+Act. calls/SMS,BrkOpen&CoolDn,DISABLED, ,0,10566,,,String list
+Act. calls/SMS,Mains protect,DISABLED, ,0,10117,,,String list
+Act. calls/SMS,Slow stop,DISABLED, ,0,8485,,,String list
+Act. calls/SMS,Shutdown,ENABLED, ,0,8484,,,String list
+Act. calls/SMS,ShutdownOvr,DISABLED, ,0,11413,,,String list
+Act. calls/SMS,AcallCH1-Type,DISABLED, ,0,9594,,,String list
+Act. calls/SMS,AcallCH1-Addr,9.71506E+11, ,0,9597,,,Long string
+Act. calls/SMS,AcallCH2-Type,DISABLED, ,0,9595,,,String list
+Act. calls/SMS,AcallCH2-Addr,9.7156E+11, ,0,9598,,,Long string
+Act. calls/SMS,AcallCH3-Type,DISABLED, ,0,9596,,,String list
+Act. calls/SMS,AcallCH3-Addr,9.7156E+11, ,0,9599,,,Long string
+Act. calls/SMS,AcallCH4-Type,DISABLED, ,0,13274,,,String list
+Act. calls/SMS,AcallCH4-Addr,9.7156E+11, ,0,13276,,,Long string
+Act. calls/SMS,AcallCH5-Type,DISABLED, ,0,13275,,,String list
+Act. calls/SMS,AcallCH5-Addr,9.7151E+11, ,0,13277,,,Long string
+Act. calls/SMS,NumberRings AA,3, ,0,24512,1,30,Unsigned 8
+Act. calls/SMS,ActCallAttempt,5, ,0,24505,1,250,Unsigned 8
+Act. calls/SMS,Acall+SMS lang,1, ,0,11394,1,7,Unsigned 8
+,,,,,,,,
+Date/Time,Time stamp act,ENGINE RUNNING, ,0,10532,,,String list
+Date/Time,Time stamp per,1,min,0,8979,1,240,Unsigned 8
+Date/Time,#SummerTimeMod,DISABLED, ,0,8727,,,String list
+Date/Time,#Time,11:52 AM, ,0,24554,,,Time
+Date/Time,#Date,8/24/2022, ,0,24553,,,Date
+,,,,,,,,
+PLC,ET HIGH,95,°C,0,10440,0,120,Integer 16
+PLC,ET LOW,85,°C,0,10441,0,120,Integer 16
+PLC,LD RES 2 START,900,kW,0,10442,0,32767,Integer 16
+PLC,LD RES 2 STOP,250,kW,0,10443,0,32767,Integer 16
+PLC,LD RES 3 START,1900,kW,0,10444,0,32767,Integer 16
+PLC,LD RES 3 STOP,901,kW,0,10445,0,32767,Integer 16
+PLC,LD RES 4 START,5555,kW,0,10446,0,32767,Integer 16
+PLC,LD RES 4 STOP,1901,kW,0,10447,0,32767,Integer 16
+,,,,,,,,
+Analog protect,T-Coolant Yel,96,°C,7,9259,-40,210,Integer 16
+Analog protect,T-Coolant Red,102,°C,7,9277,-40,210,Integer 16
+Analog protect,T-Coolant Del,20,s,7,9261,0,600,Unsigned 16
+Analog protect,P-Oil Yel,2.5,bar,7,9280,0,10,Integer 16
+Analog protect,P-Oil Red,2.2,bar,7,9283,0,10,Integer 16
+Analog protect,P-Oil Del,20,s,7,9273,0,600,Unsigned 16
+Analog protect,Batt >V,30,V,0,9262,8,40,Integer 16
+Analog protect,Batt <V,22,V,0,9265,8,40,Integer 16
+Analog protect,Batt volt del,60,s,0,9264,0,600,Unsigned 16
+Analog protect,Bus V unbal,30,%,0,9274,0,200,Integer 16
+Analog protect,Bus V unb del,10,s,0,9276,0,600,Unsigned 16
+,,,,,,,,
